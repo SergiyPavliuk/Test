@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Innovant</title>
+    <title>Upcode</title>
     <!-- Import Bootstrap styles -->
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <!--Import swiper styles-->
     <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <!--Import animate.css styles-->
+    <link rel="stylesheet" href="assets/css/animate.css">
     <!-- Import main styles -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
     <!--Add favicon-->
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -27,13 +29,434 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <a href="#"><img src="assets/img/logo.png" alt=""></a>
+                </div>
+                <nav>
+                    <ul class="navi">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#products">Products</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Name Surname</a></li>
+                                <li><a href="#">Nelson Noa Chris</a></li>
+                                <li><a href="#">Name Surname</a>
+                                    <ul class="sub-sub-menu">
+                                        <li><a href="#">Name Surname</a></li>
+                                        <li><a href="#">Nelson Noa Chris</a></li>
+                                        <li><a href="#">Name Surname</a></li>
+                                        <li><a href="#">Nelson Noa</a></li>
+                                        <li><a href="#">Nelson Noa Chris</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Nelson Noa</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <a class="nav-btn" title="menu"><span></span></a>
+                </nav>
+                <div class="search">
+                    <form action="#">
+                        <input type="search" class="search-input">
+                        <label for="search-btn"></label>
+                        <input type="submit" value="" class="search-btn" id="search-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="top text-center" id="home">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(assets/img/bg-img.jpg)">
+                    <h1 class="top-title text-uppercase wow bounceInDown">Creative <span>Design Agency</span></h1>
+                    <p class="top-desc wow bounceInUp">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit<br> non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. </p>
+                </div>
+                <div class="swiper-slide" style="background-image:url(assets/img/bg-img.jpg)">
+                    <h1 class="top-title text-uppercase wow bounceInDown">Creative <span>Design Agency</span></h1>
+                    <p class="top-desc wow bounceInUp">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit<br> non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. </p>
+                </div>
+                <div class="swiper-slide" style="background-image:url(assets/img/bg-img.jpg)">
+                    <h1 class="top-title text-uppercase wow bounceInDown">Creative <span>Design Agency</span></h1>
+                    <p class="top-desc wow bounceInUp">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit<br> non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.</p>
+                </div>
+            </div>
 
-   <!--Import jQuery-->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"><i class="icon-angle-left"></i></div>
+            <div class="swiper-button-next"><i class="icon-angle-right"></i></div>
+        </div>
+    </section>
+    <section class="choose text-center">
+        <h2 class="choose-title text-uppercase wow bounceInDown">why <span>choose us</span></h2>
+        <p class="choose-desc wow bounceInUp">Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis.
+            <br>Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
+        <div class="container">
+            <div class="row">
+                <div class="choose-blocks">
+                    <div class="block wow fadeInLeft" data-wow-delay="1.5s">
+                        <div class="icon-heart-o"></div>
+                        <h3 class="block-title text-uppercase">your title</h3>
+                        <p class="block-desc">Duis bibendum diam
+                            <br> non erat facilaisis en ter
+                            <br> tincidunt. Duis</p>
+                        <div class="see-more">
+                            <a href="#" class="see text-uppercase text-center">see more</a>
+                            <a href="#" class="link"><i class="icon-chain"></i></a>
+                            <a href="#" class="link"><i class="icon-search-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="block wow fadeInLeft" data-wow-delay="1s">
+                        <div class="icon-commenting-o"></div>
+                        <h3 class="block-title text-uppercase">your title</h3>
+                        <p class="block-desc">Duis bibendum diam
+                            <br> non erat facilaisis en ter
+                            <br> tincidunt. Duis</p>
+                        <div class="see-more">
+                            <a href="#" class="see text-uppercase text-center">see more</a>
+                            <a href="#" class="link"><i class="icon-chain"></i></a>
+                            <a href="#" class="link"><i class="icon-search-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="block wow fadeInDown" data-wow-delay="0.5s">
+                        <div class="icon-laptop"></div>
+                        <h3 class="block-title text-uppercase">your title</h3>
+                        <p class="block-desc">Duis bibendum diam
+                            <br> non erat facilaisis en ter
+                            <br> tincidunt. Duis</p>
+                        <div class="see-more">
+                            <a href="#" class="see text-uppercase text-center">see more</a>
+                            <a href="#" class="link"><i class="icon-chain"></i></a>
+                            <a href="#" class="link"><i class="icon-search-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="block wow fadeInRight" data-wow-delay="1s">
+                        <div class="icon-star-o"></div>
+                        <h3 class="block-title text-uppercase">your title</h3>
+                        <p class="block-desc">Duis bibendum diam
+                            <br> non erat facilaisis en ter
+                            <br> tincidunt. Duis</p>
+                        <div class="see-more">
+                            <a href="#" class="see text-uppercase text-center">see more</a>
+                            <a href="#" class="link"><i class="icon-chain"></i></a>
+                            <a href="#" class="link"><i class="icon-search-plus"></i></a>
+                        </div>
+                    </div>
+                    <div class="block wow fadeInRight" data-wow-delay="1.5s">
+                        <div class="icon-flag-o"></div>
+                        <h3 class="block-title text-uppercase">your title</h3>
+                        <p class="block-desc">Duis bibendum diam
+                            <br> non erat facilaisis en ter
+                            <br> tincidunt. Duis</p>
+                        <div class="see-more">
+                            <a href="#" class="see text-uppercase text-center">see more</a>
+                            <a href="#" class="link"><i class="icon-chain"></i></a>
+                            <a href="#" class="link"><i class="icon-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="products" id="products">
+        <h2 class="products-title text-uppercase text-center wow zoomInDown" data-wow-offset="100">our <span>products</span> <i class="arrow"></i></h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="our-products container">
+                        <div class="product wow slideInDown" data-wow-offset="200">
+                            <div class="product-img"><img src="assets/img/product-1.jpg" alt=""></div>
+                            <div class="product-text">
+                                <h3 class="product-title text-uppercase">title</h3>
+                                <a href="" class="product-link">Best Product</a>
+                                <p class="product-desc">Duis bibendum diam non
+                                    <br> erat facilaisis en ter </p>
+                            </div>
+                        </div>
+                        <div class="product wow slideInDown" data-wow-offset="200">
+                            <div class="product-img"><img src="assets/img/product-2.jpg" alt=""></div>
+                            <div class="product-text">
+                                <h3 class="product-title text-uppercase">title</h3>
+                                <a href="" class="product-link">Best Product</a>
+                                <p class="product-desc">Duis bibendum diam non
+                                    <br> erat facilaisis en ter </p>
+                            </div>
+                        </div>
+                        <div class="product wow slideInDown" data-wow-offset="200">
+                            <div class="product-img"><img src="assets/img/product-3.jpg" alt=""></div>
+                            <div class="product-text">
+                                <h3 class="product-title text-uppercase">title</h3>
+                                <a href="" class="product-link">Best Product</a>
+                                <p class="product-desc">Duis bibendum diam non
+                                    <br> erat facilaisis en ter </p>
+                            </div>
+                        </div>
+                        <div class="product  wow slideInUp" data-wow-offset="200">
+                            <div class="product-img"><img src="assets/img/product-4.jpg" alt=""></div>
+                            <div class="product-text">
+                                <h3 class="product-title text-uppercase">title</h3>
+                                <a href="" class="product-link">Best Product</a>
+                                <p class="product-desc">Duis bibendum diam non
+                                    <br> erat facilaisis en ter </p>
+                            </div>
+                        </div>
+                        <div class="product  wow slideInUp" data-wow-offset="200">
+                            <div class="product-img"><img src="assets/img/product-5.jpg" alt=""></div>
+                            <div class="product-text">
+                                <h3 class="product-title text-uppercase">title</h3>
+                                <a href="" class="product-link">Best Product</a>
+                                <p class="product-desc">Duis bibendum diam non
+                                    <br> erat facilaisis en ter </p>
+                            </div>
+                        </div>
+                        <div class="product  wow slideInUp" data-wow-offset="200">
+                            <div class="product-img"><img src="assets/img/product-6.jpg" alt=""></div>
+                            <div class="product-text">
+                                <h3 class="product-title text-uppercase">title</h3>
+                                <a href="" class="product-link">Best Product</a>
+                                <p class="product-desc">Duis bibendum diam non
+                                    <br> erat facilaisis en ter </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="our-products container">
+                        <div class="product wow slideInDown" data-wow-offset="200">
+                            <div class="product-img"><img src="assets/img/product-1.jpg" alt=""></div>
+                            <div class="product-text">
+                                <h3 class="product-title text-uppercase">title</h3>
+                                <a href="" class="product-link">Best Product</a>
+                                <p class="product-desc">Duis bibendum diam non
+                                    <br> erat facilaisis en ter </p>
+                            </div>
+                        </div>
+                        <div class="product wow slideInDown" data-wow-offset="200">
+                            <div class="product-img"><img src="assets/img/product-2.jpg" alt=""></div>
+                            <div class="product-text">
+                                <h3 class="product-title text-uppercase">title</h3>
+                                <a href="" class="product-link">Best Product</a>
+                                <p class="product-desc">Duis bibendum diam non
+                                    <br> erat facilaisis en ter </p>
+                            </div>
+                        </div>
+                        <div class="product wow slideInDown" data-wow-offset="200">
+                            <div class="product-img"><img src="assets/img/product-3.jpg" alt=""></div>
+                            <div class="product-text">
+                                <h3 class="product-title text-uppercase">title</h3>
+                                <a href="" class="product-link">Best Product</a>
+                                <p class="product-desc">Duis bibendum diam non
+                                    <br> erat facilaisis en ter </p>
+                            </div>
+                        </div>
+                        <div class="product wow slideInUp" data-wow-offset="200">
+                            <div class="product-img"><img src="assets/img/product-4.jpg" alt=""></div>
+                            <div class="product-text">
+                                <h3 class="product-title text-uppercase">title</h3>
+                                <a href="" class="product-link">Best Product</a>
+                                <p class="product-desc">Duis bibendum diam non
+                                    <br> erat facilaisis en ter </p>
+                            </div>
+                        </div>
+                        <div class="product wow slideInUp" data-wow-offset="200">
+                            <div class="product-img"><img src="assets/img/product-5.jpg" alt=""></div>
+                            <div class="product-text">
+                                <h3 class="product-title text-uppercase">title</h3>
+                                <a href="" class="product-link">Best Product</a>
+                                <p class="product-desc">Duis bibendum diam non
+                                    <br> erat facilaisis en ter </p>
+                            </div>
+                        </div>
+                        <div class="product wow slideInUp" data-wow-offset="200">
+                            <div class="product-img"><img src="assets/img/product-6.jpg" alt=""></div>
+                            <div class="product-text">
+                                <h3 class="product-title text-uppercase">title</h3>
+                                <a href="" class="product-link">Best Product</a>
+                                <p class="product-desc">Duis bibendum diam non
+                                    <br> erat facilaisis en ter </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="our-products container">
+                        <div class="product wow slideInDown" data-wow-offset="200">
+                            <div class="product-img"><img src="assets/img/product-1.jpg" alt=""></div>
+                            <div class="product-text">
+                                <h3 class="product-title text-uppercase">title</h3>
+                                <a href="" class="product-link">Best Product</a>
+                                <p class="product-desc">Duis bibendum diam non
+                                    <br> erat facilaisis en ter </p>
+                            </div>
+                        </div>
+                        <div class="product wow slideInDown" data-wow-offset="200">>
+                            <div class="product-img"><img src="assets/img/product-2.jpg" alt=""></div>
+                            <div class="product-text">
+                                <h3 class="product-title text-uppercase">title</h3>
+                                <a href="" class="product-link">Best Product</a>
+                                <p class="product-desc">Duis bibendum diam non
+                                    <br> erat facilaisis en ter </p>
+                            </div>
+                        </div>
+                        <div class="product wow slideInDown" data-wow-offset="200">
+                            <div class="product-img"><img src="assets/img/product-3.jpg" alt=""></div>
+                            <div class="product-text">
+                                <h3 class="product-title text-uppercase">title</h3>
+                                <a href="" class="product-link">Best Product</a>
+                                <p class="product-desc">Duis bibendum diam non
+                                    <br> erat facilaisis en ter </p>
+                            </div>
+                        </div>
+                        <div class="product wow slideInUp" data-wow-offset="200">
+                            <div class="product-img"><img src="assets/img/product-4.jpg" alt=""></div>
+                            <div class="product-text">
+                                <h3 class="product-title text-uppercase">title</h3>
+                                <a href="" class="product-link">Best Product</a>
+                                <p class="product-desc">Duis bibendum diam non
+                                    <br> erat facilaisis en ter </p>
+                            </div>
+                        </div>
+                        <div class="product wow slideInUp" data-wow-offset="200">
+                            <div class="product-img"><img src="assets/img/product-5.jpg" alt=""></div>
+                            <div class="product-text">
+                                <h3 class="product-title text-uppercase">title</h3>
+                                <a href="" class="product-link">Best Product</a>
+                                <p class="product-desc">Duis bibendum diam non
+                                    <br> erat facilaisis en ter </p>
+                            </div>
+                        </div>
+                        <div class="product wow slideInUp" data-wow-offset="200">
+                            <div class="product-img"><img src="assets/img/product-6.jpg" alt=""></div>
+                            <div class="product-text">
+                                <h3 class="product-title text-uppercase">title</h3>
+                                <a href="" class="product-link">Best Product</a>
+                                <p class="product-desc">Duis bibendum diam non
+                                    <br> erat facilaisis en ter </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="about-title text-uppercase wow rollIn"><span>about</span> us</h2>
+                    <p class="about-top-desc wow flipInX" data-wow-delay="0.3s">Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euism Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
+                    <p class="about-desc wow flipInY" data-wow-delay="0.6s">Nullam at scelerisque tellus. Nulla feugiat iaculis ante, non tincidunt ligula scelerisque a. Vestibulum accumsan tincidunt odio vel finibus. Phasellus vestibulum lobortis ligula ut volutpat. Maecenas vitae nibh vel purus mollis semper. Nullam tempus feugiat mi id semper. Pellentesque ac posuere augue, vitae mollis enim. Etiam et ullamcorper dolor, a hendrerit quam. Donec pulvinar iaculis faucibus. Nunc feugiat semper fringilla.</p>
+                    <div class="skills">
+                        <div class="skill-block wow fadeInLeft" data-wow-delay="1s">
+                            <div class="skills-theme text-uppercase">photoshop</div>
+                            <span class="skills-count">79%</span>
+                            <div class="skills-bar wid79"></div>
+                        </div>
+                        <div class="skill-block wow fadeInLeft" data-wow-delay="1.5s">
+                            <div class="skills-theme text-uppercase">HTML/CSS</div>
+                            <span class="skills-count">90%</span>
+                            <div class="skills-bar wid90"></div>
+                        </div>
+                        <div class="skill-block wow fadeInLeft" data-wow-delay="1.75s">
+                            <div class="skills-theme text-uppercase">javascript</div>
+                            <span class="skills-count">69%</span>
+                            <div class="skills-bar wid69"></div>
+                        </div>
+                        <div class="skill-block wow fadeInLeft" data-wow-delay="2s">
+                            <div class="skills-theme text-uppercase">wordpress</div>
+                            <span class="skills-count">92%</span>
+                            <div class="skills-bar wid92"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offset-md-2 col-md-4">
+                    <div class="about-img wow tada" data-wow-delay="0.7s">
+                        <img src="assets/img/ipad.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact text-center" id="contact">
+        <h2 class="contact-title text-uppercase wow bounceInDown">get in <span>touch</span></h2>
+        <p class="contact-desc wow bounceInUp">Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis.<br> Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
+        <div class="contacts text-left">
+            <div id="google-map"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="offset-md-1 col-md-10">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <form action="#" class="contact-form">
+                                    <div class="inputs">
+                                        <input type="text" class="name placeholder-out" placeholder="Full name" required>
+                                        <input type="email" id='email' class="mail placeholder-out" placeholder="E-mail Adress" required>
+                                        <label for="email"></label>
+                                        <ul class="your-mail">
+                                            <li>somename@mail.com</li>
+                                            <li>name@mail.com</li>
+                                            <li>yourname@mail.com</li>
+                                        </ul>
+                                    </div>
+                                    <textarea class="text-field placeholder-out" placeholder="Message" required></textarea>
+                                    <br>
+                                    <div class="check-block">
+                                        <input type="checkbox" id="check">
+                                        <label for="check"><span></span>I like your company</label>
+                                    </div>
+                                    <input type="submit" class="btn" value="Send">
+                                </form>
+                            </div>
+                            <div class="offset-md-1 col-md-4">
+                                <div class="contact-info">
+                                    <div class="company-adress">69/A, Some Street Name
+                                        <br>Your City, code 01234
+                                        <br>Country Name
+                                    </div>
+                                    <div class="phone"><a href="tel:+8801234567898">+880 123 456 78 98</a>
+                                        <br>
+                                        <a href="tel:+8609876487495">+860 987 648 74 95</a></div>
+                                    <div class="mails">
+                                        <a href="mailto:company@mail.com">company@mail.com</a>
+                                        <br>
+                                        <a href="mailto:sales@mail.com">sales@mail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="copyright">Copyright © Company. All Rights Reserved 2016</p>
+        <ul class="social">
+            <li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
+            <li><a href="#" class="google-plus"><i class="icon-google-plus"></i></a></li>
+            <li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
+            <li><a href="#" class="dribbble"><i class="icon-dribbble"></i></a></li>
+        </ul>
+    </footer>
+    <!--Import jQuery-->
     <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
     <!-- jQuery for older IE -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!--Swiper-->
     <script src="assets/js/swiper.jquery.min.js"></script>
+    <!--Google maps-->
+    <script src="https://maps.googleapis.com/maps/api/js?AIzaSyBGxdSRbsyHMWTBJlZPDp24gIo4v4Nnbfo&callback=initMap" async defer></script>
+    <!-- WOW.js -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Scroll2id -->
+    <script src="assets/js/jquery.malihu.PageScroll2id.min.js"></script>
     <!-- Site Scripts -->
     <script src="assets/js/functions.js"></script>
 
