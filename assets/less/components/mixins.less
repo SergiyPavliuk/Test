@@ -13,7 +13,9 @@
 .transition(@prop: all, @time: 0.3s, @ease: ease-in-out) {
   transition: @prop @time @ease;
 }
-
+.rotate (@deg: 45deg){
+  transform: rotate(@deg);
+}
 .bg-img(@img,@pos: center center,@size:cover,@att: scroll) {
     background-image: url('@{img-folder}@{img}');
     background-position: @pos;
@@ -22,6 +24,8 @@
     background-attachment: @att;
 }
 .overlay(@opacity: 50%) {
+    position: relative;
+    z-index: 1;
     &:before {
         position: absolute;
         content: '';
@@ -32,4 +36,19 @@
         background-color: fade(@font, @opacity);
         z-index: -1;
     }
+}
+.overlay-grad{
+    position: relative;
+    z-index: 1;
+    &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: linear-gradient(-71deg, #503392 0%, #55359b 23%, #673ab7 49%, #00bff3 100%);
+            z-index: -1;
+            opacity: 0.7;
+        }
 }

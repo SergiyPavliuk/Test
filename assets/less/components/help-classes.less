@@ -1,38 +1,80 @@
 //text align
 .text-left {
-  text-align: left;
+    text-align: left;
 }
 
 .text-right {
-  text-align: right;
+    text-align: right;
 }
 
 .text-justify {
-  text-align: justify;
+    text-align: justify;
 }
 
 .text-center {
-  text-align: center;
+    text-align: center;
 }
 
 .text-uppercase {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 //list
 .ul-unstyled {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+//skills-bar width
+.wid79 {
+    &:before {
+        width: ~"calc(79% - 4px)";
+    }
+}
+
+.wid90 {
+    &:before {
+        width: ~"calc(90% - 4px)";
+    }
+}
+
+.wid69 {
+    &:before {
+        width: ~"calc(69% - 4px)";
+    }
+}
+
+.wid92 {
+    &:before {
+        width: ~"calc(92% - 4px)";
+    }
+}
+
+//deley {
+.delay-05 {
+    animation-delay: 0.5s;
+}
+.delay-075 {
+    animation-delay: 0.75s;
+}
+.delay-1 {
+    animation-delay: 1s;
+}
+.delay-125 {
+    animation-delay: 1.25s;
+}
+.delay-15 {
+    animation-delay: 1.5s;
 }
 
 //rows
 .row.no-gutters {
-   margin-right: 0;
-   margin-left: 0;
+    margin-right: 0;
+    margin-left: 0;
 }
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
-   padding-right: 0;
-   padding-left: 0;
+.row.no-gutters>[class^="col-"],
+.row.no-gutters>[class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
 }

@@ -1,1 +1,217 @@
-    //forms, buttons, dialogs etc.
+//forms, buttons, dialogs etc.
+
+/* Search */
+
+.search {
+    position: absolute;
+    right: 93px;
+    top: 18px;
+    max-width: 150px;
+    .search-input {
+        width: 150px;
+        border: none;
+        background: @font-i-bg;
+        padding: 0 33px 0 5px;
+        height: 25px;
+        &:focus {
+            background: @font-b;
+        }
+    }
+    .search-btn {
+        cursor: pointer;
+        border: none;
+        background: none;
+        position: absolute;
+        right: 22px;
+        top: 10px;
+        width: 13px;
+    }
+    label {
+        position: absolute;
+        right: 22px;
+        top: 2px;
+        font-size: 13px;
+        color: @font-nav;
+        &:before {
+            content: "\e906";
+            font-family: 'icons';
+        }
+    }
+}
+
+//Nav Button
+.nav-btn {
+    display: inline-block;
+    position: relative;
+    width: @nav-w;
+    height: (@nav-o * 2) + @nav-h;
+    cursor: pointer;
+    padding: 0;
+    display: none;
+    margin-top: 15px;
+}
+
+.nav-btn span,
+.nav-btn span:before,
+.nav-btn span:after {
+    .transition();
+    width: @nav-w;
+    height: @nav-h;
+}
+
+.nav-btn span {
+    background: @font;
+    &:before,
+    &:after {
+        background: @font;
+    }
+}
+
+.nav-btn span {
+    position: relative;
+    display: inline-block;
+    margin-top: @nav-o;
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+    }
+    &:before {
+        top: -@nav-o;
+    }
+    &:after {
+        top: @nav-o;
+    }
+}
+
+
+/* Nav Button */
+
+.nav-btn.active span {
+    background-color: transparent;
+    &:before,
+    &:after {
+        top: 0;
+    }
+    &:before {
+        .rotate(-135deg);
+    }
+    &:after {
+        .rotate(135deg);
+    }
+}
+
+
+/*Contact form*/
+
+.contact-form {
+    input,
+    textarea {
+        background: transparent;
+        color: @font-g3;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        padding-left: 20px;
+        &:focus {
+            outline: none;
+        }
+    }
+    textarea {
+        width: 100%;
+        height: 122px;
+        padding-top: 10px;
+        overflow: hidden;
+    }
+    .name,
+    .mail {
+        height: 42px;
+        width: 48%;
+    }
+    .mail {
+        margin-left: 3.3%;
+        padding-right: 35px;
+
+    }
+    .mail+ label {
+        position: absolute;
+        right: 30px;
+        top: 55%;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 4.5px 0 4.5px;
+        border-color: @font-w transparent transparent transparent;
+    }
+    .btn {
+        position: absolute;
+        margin-top: 8px;
+        right: 15px;
+        background: @font-y;
+        width: 100px;
+        height: 42px;
+        border: none;
+        cursor: pointer;
+        color: @font;
+        padding-left: 0;
+    }
+    .check-block {
+        display: inline-block;
+        padding-top: 20px;
+        color: @font-g3;
+        font-size: 16px;
+        line-height: 24px;
+        input[type="checkbox"] {
+            display: none;
+        }
+        input[type="checkbox"] + label span {
+            display: inline-block;
+            width: 21px;
+            height: 21px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            margin: -1px 4px 0 0;
+            vertical-align: middle;
+            cursor: pointer;
+            position: relative;
+        }
+        input[type="checkbox"]:checked + label span {
+            &:before {
+                content: '\f00c';
+                font-family: 'icons';
+                width: 100%;
+                height: 100%;
+                font-size: 20px;
+                position: absolute;
+                left: 0px;
+                bottom: 3px;
+                color: @font-b;
+            }
+        }
+    }
+    .inputs{
+        position: relative;
+        width: 100%;
+    }
+}
+
+.placeholder-out:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.placeholder-out:focus::-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.placeholder-out:focus:-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.placeholder-out:focus:-ms-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
